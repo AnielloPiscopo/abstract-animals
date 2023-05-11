@@ -1,6 +1,8 @@
 package org.obj.animals;
 
-public class Dolphin extends Animal {
+import org.interfaces.*;
+
+public class Dolphin extends Animal implements ISwimmingAnimals {
 
 	@Override
 	public void call() {
@@ -11,5 +13,11 @@ public class Dolphin extends Animal {
 	@Override
 	public void eat() {
 		System.out.println("Pesce");
+	}
+	
+	@Override
+	public void swim() {
+		// TODO Auto-generated method stub
+		System.out.println("Sto nuotando");
 	}
 }

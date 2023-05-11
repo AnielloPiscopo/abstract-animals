@@ -1,6 +1,8 @@
 package org.obj.animals;
 
-public class Sparrow extends Animal {
+import org.interfaces.*;
+
+public class Sparrow extends Animal implements IFlyingAnimals {
 
 	@Override
 	public void call() {
@@ -12,5 +14,11 @@ public class Sparrow extends Animal {
 	public void eat() {
 		// TODO Auto-generated method stub
 		System.out.println("Carne e vermi");
+	}
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		System.out.println("Sto volando");
 	}
 }
